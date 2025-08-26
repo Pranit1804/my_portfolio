@@ -25,7 +25,9 @@ class _ProjectCardState extends State<ProjectCard> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        launchUrl(Uri.parse(widget.url));
+        if (widget.url.isNotEmpty) {
+          launchUrl(Uri.parse(widget.url));
+        }
       },
       child: MouseRegion(
         onEnter: (_) => setState(() => hover = true),
@@ -54,20 +56,21 @@ class _ProjectCardState extends State<ProjectCard> {
               const SizedBox(height: 8),
               _bodyText(widget.desc),
               const SizedBox(height: 12),
-              Opacity(
-                opacity: .7,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: const [
-                    Icon(Icons.north_east, size: 14, color: Colors.white70),
-                    SizedBox(width: 6),
-                    Text(
-                      'View',
-                      style: TextStyle(fontSize: 12, color: Colors.white70),
-                    ),
-                  ],
+              if (widget.url.isNotEmpty)
+                Opacity(
+                  opacity: .7,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.north_east, size: 14, color: Colors.white70),
+                      SizedBox(width: 6),
+                      Text(
+                        'View',
+                        style: TextStyle(fontSize: 12, color: Colors.white70),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
             ],
           ),
         ),

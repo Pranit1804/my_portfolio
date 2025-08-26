@@ -54,7 +54,6 @@ class PortfolioPage extends StatefulWidget {
 
 class _PortfolioPageState extends State<PortfolioPage> {
   final _scrollCtrl = ScrollController();
-  final _aboutKey = GlobalKey();
   final _expKey = GlobalKey();
   final _projectsKey = GlobalKey();
   final _contactKey = GlobalKey();
@@ -78,8 +77,6 @@ class _PortfolioPageState extends State<PortfolioPage> {
 
   @override
   Widget build(BuildContext context) {
-    final isMobile = ResponsiveBreakpoints.of(context).isMobile;
-
     return Scaffold(
       appBar: NavBar(
         onExperience: () => _jumpTo(_expKey),
