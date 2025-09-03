@@ -20,7 +20,7 @@ class Homepage extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Portfolio',
+      title: 'Pranit Bhogale',
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xFF0A0A0A),
         textTheme: textTheme,
