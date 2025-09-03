@@ -58345,7 +58345,7 @@ A.An.prototype={
 L(a){var s=null,r=A.a7E(a),q=A.bO(a,s,t.w).w,p=t.E
 return A.Ym(new A.iB(B.ih,s,s,A.hB(A.c([new A.nH(s),A.dI("Hi, I'm Pranit",A.lN(s,s,s,s,s,s,s,s,s,s,s,r.e?34:54,s,s,B.ao,s,s,!0,s,s,s,s,s,s,s,s)),B.d8,B.Du,B.GP,A.dI("\u201cFrom idea to app store, I build scalable mobile and web apps with Flutter.\u201d",B.ev),B.GQ,A.acW(A.c([new A.BK("View Projects",this.c,s)],p),12,12),new A.nH(s)],p),B.a7,B.aa),s),q.a.b-400,1/0)}}
 A.Ap.prototype={
-L(a){return new A.rz(B.Es,new A.PY(),"Portfolio",A.Zp(null,B.xc,B.fa,A.ard().$0().WX(B.j,B.j),!0),!1,null)}}
+L(a){return new A.rz(B.Es,new A.PY(),"Pranit Bhogale",A.Zp(null,B.xc,B.fa,A.ard().$0().WX(B.j,B.j),!0),!1,null)}}
 A.PY.prototype={
 $2(a,b){var s=null
 b.toString
